@@ -1,43 +1,135 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog</title>
-    <style> 
-    header{ 
-        background-color: #183C63;
-        color: #FFFFFF;
-     text-align: center;
-     max-height:800px ;
-      margin: 0 auto;
-       padding: 16px
-       border: 5px solid #95ceed
-        } 
-        main{
-          background-color: #FFFFFF;
-      color: #183C63;
-        max-width: 800px; 
-       margin: 0 auto; 
-      padding: 16px;
-       } 
-       img{ 
-        width: 80px ;
-        height: 80px;
-           } 
-              </style>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-    <p>my blog nails</p>
-</header>
-<main>
-    <img src="Gemini_Generated_Image_cm9h52cm9h52cm9h.png" alt="Ilustração em close-up de uma mão com unhas bem cuidadas pintadas de rosa claro e uma com glitter, segurando um vidro de esmalte sobre um fundo azul claro com detalhes florais.">
-    <h2>Meu primeiro post</h2>
-    <p>Por: Ana Julia</p>
-    <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de unhas. </p>
-    </main>
-<h1>compartilhando meus conhecimentos sobre unhas</h1>
-</body>
-</html>
+/* Variáveis para Tema Claro (Padrão) */
+:root {
+    --bg-body: #f4f7f9;
+    --bg-card: #ffffff;
+    --bg-header: #183C63;
+    --text-primary: #183C63;
+    --text-secondary: #555555;
+    --header-text: #ffffff;
+    --border-color: #95ceed;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Variáveis para Tema Escuro */
+body.dark-theme {
+    --bg-body: #121212;
+    --bg-card: #1e1e1e;
+    --bg-header: #0d2137;
+    --text-primary: #e0e0e0;
+    --text-secondary: #a0a0a0;
+    --header-text: #95ceed;
+    --border-color: #183C63;
+    --shadow-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Configurações Gerais */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--bg-body);
+    color: var(--text-primary);
+    line-height: 1.6;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Cabeçalho */
+header {
+    background-color: var(--bg-header);
+    color: var(--header-text);
+    text-align: center;
+    padding: 30px 20px;
+    border-bottom: 5px solid var(--border-color);
+}
+
+header h1 {
+    font-size: 2.2rem;
+    margin-bottom: 8px;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* Botão de Tema */
+.btn-theme {
+    margin-top: 15px;
+    padding: 8px 16px;
+    border: 2px solid var(--border-color);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--header-text);
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.btn-theme:hover {
+    background-color: var(--border-color);
+    color: #183C63;
+}
+
+/* Layout do Conteúdo Principal */
+.container {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px; /* Espaçamento lateral nas telas */
+}
+
+/* Card das Postagens */
+.post {
+    background-color: var(--bg-card);
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.post:hover {
+    transform: translateY(-2px);
+}
+
+.post img {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid var(--border-color);
+    flex-shrink: 0;
+}
+
+.post-content h2 {
+    font-size: 1.4rem;
+    color: var(--text-primary);
+    margin-bottom: 4px;
+}
+
+.post-content .author {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    font-weight: bold;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.post-content p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .post {
+        flex-direction: column;
+        text-align: center;
+    }
+}
