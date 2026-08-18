@@ -1,99 +1,209 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog dedicado a dicas de cuidados, tendências e técnicas para manter suas unhas impecáveis.">
     <title>My Blog Nails</title>
+    
+    <!-- Google Fonts para tipografia moderna -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Blog Nails</h1>
-        <p>Compartilhando meus conhecimentos sobre unhas</p>
-        <button id="toggle-theme" class="btn-theme">Modo Escuro 🌙</button>
+    <!-- Cabeçalho -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="brand">
+                <h1 class="site-title">My Blog Nails</h1>
+                <p class="site-subtitle">Compartilhando meus conhecimentos sobre unhas</p>
+            </div>
+            <button id="toggle-theme" class="btn-theme" aria-label="Alternar para modo escuro">
+                <span class="theme-icon" aria-hidden="true">🌙</span>
+                <span class="theme-text">Modo Escuro</span>
+            </button>
+        </div>
     </header>
 
+    <!-- Conteúdo Principal -->
     <main class="container">
-        
-        <article class="post">
-            <img src="Gemini_Generated_Image_cm9h52cm9h52cm9h.png" alt="Ilustração em close-up de uma mão com unhas bem cuidadas pintadas de rosa claro segurando um vidro de esmalte.">
-            <div class="post-content">
-                <h2>Meu Primeiro Post</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de cuidados, tendências e técnicas para manter suas unhas impecáveis.</p>
-            </div>
-        </article>
+        <section class="posts-grid" aria-label="Publicações do blog">
+            
+            <!-- Post 1 -->
+            <article class="post-card">
+                <a href="#" class="post-link" aria-label="Ler post: Meu Primeiro Post">
+                    <div class="post-image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop" 
+                            alt="Mão com unhas bem cuidadas e pintadas de rosa claro segurando um vidro de esmalte"
+                            loading="lazy"
+                            decoding="async"
+                            width="600"
+                            height="400"
+                        >
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="author">Por Ana Julia</span>
+                            <span class="dot-separator">•</span>
+                            <time datetime="2026-08-18">18 Ago 2026</time>
+                        </div>
+                        <h2 class="post-title">Meu Primeiro Post</h2>
+                        <p class="post-excerpt">Boas-vindas ao meu blog! Aqui vou compartilhar dicas de cuidados, tendências e técnicas para manter as suas unhas impecáveis.</p>
+                        <span class="read-more">Ler mais &rarr;</span>
+                    </div>
+                </a>
+            </article>
 
-        <article class="post">
-            <img src="https://via.placeholder.com/80" alt="Exemplo de unha decorada">
-            <div class="post-content">
-                <h2>Dicas de Cutilagem e Hidratação</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Manter as cutículas hidratadas é o segredo para uma esmaltação duradoura. Confira os óleos essenciais que recomendo!</p>
-            </div>
-        </article>
+            <!-- Post 2 -->
+            <article class="post-card">
+                <a href="#" class="post-link" aria-label="Ler post: Dicas de Cutilagem e Hidratação">
+                    <div class="post-image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop" 
+                            alt="Aplicação de óleo e cuidados com as cutículas durante a manicure"
+                            loading="lazy"
+                            decoding="async"
+                            width="600"
+                            height="400"
+                        >
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="author">Por Ana Julia</span>
+                            <span class="dot-separator">•</span>
+                            <time datetime="2026-08-15">15 Ago 2026</time>
+                        </div>
+                        <h2 class="post-title">Dicas de Cutilagem e Hidratação</h2>
+                        <p class="post-excerpt">Manter as cutículas hidratadas é o segredo para uma esmaltação duradoura. Confira os óleos essenciais que recomendo!</p>
+                        <span class="read-more">Ler mais &rarr;</span>
+                    </div>
+                </a>
+            </article>
 
-        <article class="post">
-            <img src="https://via.placeholder.com/80" alt="Exemplo de esmaltação em gel">
-            <div class="post-content">
-                <h2>Cores de Esmalte para Alta Estação</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Descubra as paletas de cores que vão bombar nesta temporada e aprenda a combinar tons pastel com glitter.</p>
-            </div>
-        </article>
+            <!-- Post 3 -->
+            <article class="post-card">
+                <a href="#" class="post-link" aria-label="Ler post: Cores de Esmalte para Alta Estação">
+                    <div class="post-image-wrapper">
+                        <img 
+                            src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=600&auto=format&fit=crop" 
+                            alt="Vidros de esmalte e unhas decoradas em tons pastéis"
+                            loading="lazy"
+                            decoding="async"
+                            width="600"
+                            height="400"
+                        >
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="author">Por Ana Julia</span>
+                            <span class="dot-separator">•</span>
+                            <time datetime="2026-08-10">10 Ago 2026</time>
+                        </div>
+                        <h2 class="post-title">Cores de Esmalte para Alta Estação</h2>
+                        <p class="post-excerpt">Descubra as paletas de cores que vão bombar nesta temporada e aprenda a combinar tons pastel com glitter.</p>
+                        <span class="read-more">Ler mais &rarr;</span>
+                    </div>
+                </a>
+            </article>
 
+        </section>
     </main>
+
+    <!-- Rodapé -->
+    <footer class="site-footer">
+        <p>&copy; 2026 My Blog Nails. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
 </html>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog sobre cuidados, tendências e técnicas para manter suas unhas impecáveis.">
     <title>My Blog Nails</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <h1>My Blog Nails</h1>
-        <p>Compartilhando meus conhecimentos sobre unhas</p>
-        <button id="toggle-theme" class="btn-theme">Modo Escuro 🌙</button>
+    <header class="header">
+        <div class="header-container">
+            <div>
+                <h1 class="logo">My Blog Nails</h1>
+                <p class="subtitle">Compartilhando meus conhecimentos sobre unhas</p>
+            </div>
+            <button id="toggle-theme" class="btn-theme" aria-label="Alternar modo escuro">
+                <span>🌙</span> Modo Escuro
+            </button>
+        </div>
     </header>
 
     <main class="container">
-        
-        <article class="post">
-            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=300&auto=format&fit=crop" alt="Mão com unhas bem cuidadas e pintadas de rosa claro segurando um vidro de esmalte">
-            <div class="post-content">
-                <h2>Meu Primeiro Post</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de cuidados, tendências e técnicas para manter as suas unhas impecáveis.</p>
-            </div>
-        </article>
+        <section class="posts-grid">
+            
+            <article class="post-card">
+                <div class="post-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop" 
+                        alt="Esmaltação impecável em tons de azul" 
+                        loading="lazy"
+                    >
+                </div>
+                <div class="post-content">
+                    <span class="meta">Por Ana Julia • 18 Ago 2026</span>
+                    <h2>Meu Primeiro Post</h2>
+                    <p>Boas-vindas ao meu blog! Aqui vou compartilhar dicas de cuidados, tendências e técnicas para manter suas unhas impecáveis.</p>
+                </div>
+            </article>
 
-        <article class="post">
-            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=300&auto=format&fit=crop" alt="Aplicação de óleo e cuidados com as cutículas durante a manicure">
-            <div class="post-content">
-                <h2>Dicas de Cutilagem e Hidratação</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Manter as cutículas hidratadas é o segredo para uma esmaltação duradoura. Confira os óleos essenciais que recomendo!</p>
-            </div>
-        </article>
+            <article class="post-card">
+                <div class="post-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?q=80&w=600&auto=format&fit=crop" 
+                        alt="Cuidados e hidratação com as cutículas" 
+                        loading="lazy"
+                    >
+                </div>
+                <div class="post-content">
+                    <span class="meta">Por Ana Julia • 15 Ago 2026</span>
+                    <h2>Dicas de Cutilagem e Hidratação</h2>
+                    <p>Manter as cutículas hidratadas é o segredo para uma esmaltação duradoura. Confira os óleos essenciais que recomendo!</p>
+                </div>
+            </article>
 
-        <article class="post">
-            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=300&auto=format&fit=crop" alt="Vidros de esmalte e unhas decoradas em tons pastéis">
-            <div class="post-content">
-                <h2>Cores de Esmalte para Alta Estação</h2>
-                <span class="author">Por: Ana Julia</span>
-                <p>Descubra as paletas de cores que vão bombar nesta temporada e aprenda a combinar tons pastel com glitter.</p>
-            </div>
-        </article>
+            <article class="post-card">
+                <div class="post-image-wrapper">
+                    <img 
+                        src="https://images.unsplash.com/photo-1599948128020-9a44505b0d1b?q=80&w=600&auto=format&fit=crop" 
+                        alt="Vidros de esmalte em paleta azul" 
+                        loading="lazy"
+                    >
+                </div>
+                <div class="post-content">
+                    <span class="meta">Por Ana Julia • 10 Ago 2026</span>
+                    <h2>Cores de Esmalte para Alta Estação</h2>
+                    <p>Descubra as paletas de cores que vão bombar nesta temporada e aprenda a combinar tons azuis com glitter.</p>
+                </div>
+            </article>
 
+        </section>
     </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 My Blog Nails. Todos os direitos reservados.</p>
+    </footer>
 
     <script src="script.js"></script>
 </body>

@@ -133,3 +133,130 @@ header p {
         text-align: center;
     }
 }
+:root {
+    --bg-page: #f4f8fb;
+    --bg-card: #ffffff;
+    --text-primary: #1e293b;
+    --text-secondary: #64748b;
+    --primary-blue: #2563eb;
+    --light-blue: #e0f2fe;
+    --border-color: #e2e8f0;
+    --radius: 12px;
+}
+
+body.dark-mode {
+    --bg-page: #0f172a;
+    --bg-card: #1e293b;
+    --text-primary: #f8fafc;
+    --text-secondary: #94a3b8;
+    --border-color: #334155;
+    --light-blue: #1e3a8a;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: var(--bg-page);
+    color: var(--text-primary);
+    line-height: 1.5;
+}
+
+/* Header */
+.header {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    padding: 1.5rem 1rem;
+}
+
+.header-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.subtitle {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+.btn-theme {
+    background-color: var(--light-blue);
+    color: var(--primary-blue);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Posts */
+.container {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.post-card {
+    background-color: var(--bg-card);
+    border-radius: var(--radius);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.post-image-wrapper {
+    width: 100%;
+    height: 180px;
+}
+
+.post-image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post-content {
+    padding: 1.25rem;
+}
+
+.meta {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.post-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.post-content p {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
